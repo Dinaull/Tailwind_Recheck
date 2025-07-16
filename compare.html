@@ -1,0 +1,68 @@
+<!-- Struktur Folder (dalam format komentar):
+
+recheck/
+├── index.html            (Landing Page)
+├── check.html            (Cek Skincare)
+├── education.html        (Edukasi Skincare)
+├── compare.html          (Bandingkan Kemasan)
+├── report.html           (Form Pelaporan)
+├── js/
+│   └── script.js         (Interaktivitas dasar)
+└── assets/
+    ├── img/              (Gambar dummy kemasan, ikon, dll)
+    └── icons/
+
+-->
+
+<!-- compare.html (Bandingkan Kemasan) with Tailwind CSS -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bandingkan Kemasan | ReCheck</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <header class="bg-blue-900 text-white">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">ReCheck</h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="hover:underline">Beranda</a>
+        <a href="check.html" class="hover:underline">Cek Skincare</a>
+        <a href="education.html" class="hover:underline">Edukasi</a>
+        <a href="report.html" class="hover:underline">Lapor</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-semibold text-center text-blue-900 mb-10">Perbandingan Kemasan Produk</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div class="bg-white rounded-lg shadow p-4">
+        <h3 class="text-center font-semibold text-pink-600 mb-4">Asli</h3>
+        <img src="assets/img/skincare_asli.jpg" alt="Kemasan Asli" class="w-full h-64 object-contain rounded">
+        <ul class="mt-4 text-sm text-slate-600 list-disc list-inside">
+          <li>Logo dan font konsisten</li>
+          <li>Ada nomor BPOM</li>
+          <li>Kemasan rapi dan tersegel</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-lg shadow p-4">
+        <h3 class="text-center font-semibold text-red-600 mb-4">Palsu</h3>
+        <img src="assets/img/skincare_palsu.jpg" alt="Kemasan Palsu" class="w-full h-64 object-contain rounded">
+        <ul class="mt-4 text-sm text-slate-600 list-disc list-inside">
+          <li>Warna kemasan buram</li>
+          <li>Tidak ada atau nomor BPOM palsu</li>
+          <li>Kemasan mudah rusak atau tidak tersegel</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-white text-center text-sm text-slate-500 py-4 border-t border-slate-200">
+    &copy; 2025 ReCheck.
+  </footer>
+</body>
+</html>

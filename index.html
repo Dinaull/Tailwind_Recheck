@@ -1,0 +1,70 @@
+<!-- Struktur Folder (dalam format komentar):
+
+recheck/
+├── index.html            (Landing Page)
+├── check.html            (Cek Skincare)
+├── education.html        (Edukasi Skincare)
+├── compare.html          (Bandingkan Kemasan)
+├── report.html           (Form Pelaporan)
+├── js/
+│   └── script.js         (Interaktivitas dasar)
+└── assets/
+    ├── img/              (Gambar dummy kemasan, ikon, dll)
+    └── icons/
+
+-->
+
+<!-- index.html (Landing Page) with Tailwind CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReCheck – Cek Skincare-mu!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <header class="bg-blue-900 text-white">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">ReCheck</h1>
+      <nav class="space-x-4">
+        <a href="check.html" class="hover:underline">Cek Skincare</a>
+        <a href="education.html" class="hover:underline">Edukasi</a>
+        <a href="compare.html" class="hover:underline">Bandingkan</a>
+        <a href="report.html" class="hover:underline">Lapor</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bg-gradient-to-r from-pink-200 to-green-100 py-20 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 text-blue-900">Lindungi kulitmu dari skincare berbahaya.</h2>
+      <p class="text-lg text-slate-700 mb-6">ReCheck membantumu melakukan pengecekan sederhana terhadap keaslian dan keamanan produk skincare, serta edukasi agar kamu lebih waspada.</p>
+      <a href="check.html" class="inline-block bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-6 rounded-md transition duration-300">Mulai Pemeriksaan</a>
+    </div>
+  </section>
+
+  <section class="bg-white py-16">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div class="p-6 bg-slate-100 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">Simulasi Cek Kemasan</h3>
+        <p class="text-sm text-slate-600">Masukkan nama produk dan nomor registrasi untuk mengecek apakah skincare-mu aman.</p>
+      </div>
+      <div class="p-6 bg-slate-100 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">Edukasi Visual</h3>
+        <p class="text-sm text-slate-600">Pelajari ciri-ciri skincare ilegal dan bahaya kandungan berbahaya seperti merkuri.</p>
+      </div>
+      <div class="p-6 bg-slate-100 rounded-xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-pink-600 mb-2">Pelaporan Mandiri</h3>
+        <p class="text-sm text-slate-600">Laporkan produk mencurigakan agar dapat ditindaklanjuti dan membantu orang lain.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-white text-center text-sm text-slate-500 py-4 border-t border-slate-200">
+    &copy; 2025 ReCheck. SDG 3 - Good Health and Well-being.
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
