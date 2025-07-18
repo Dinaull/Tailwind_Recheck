@@ -1,20 +1,3 @@
-<!-- Struktur Folder (dalam format komentar):
-
-recheck/
-├── index.html            (Landing Page)
-├── check.html            (Cek Skincare)
-├── education.html        (Edukasi Skincare)
-├── compare.html          (Bandingkan Kemasan)
-├── report.html           (Form Pelaporan)
-├── js/
-│   └── script.js         (Interaktivitas dasar)
-└── assets/
-    ├── img/              (Gambar dummy kemasan, ikon, dll)
-    └── icons/
-
--->
-
-<!-- report.html (Form Pelaporan) with Tailwind CSS -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -26,12 +9,12 @@ recheck/
 <body class="bg-slate-50 text-slate-800">
   <header class="bg-blue-900 text-white">
     <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold">ReCheck</h1>
+      <a href="index.html"><img src="assets/img/logo_r.png" alt="ReCheck Logo" class="h-10"></a>
       <nav class="space-x-4">
-        <a href="index.html" class="hover:underline">Beranda</a>
-        <a href="check.html" class="hover:underline">Cek Skincare</a>
-        <a href="education.html" class="hover:underline">Edukasi</a>
-        <a href="compare.html" class="hover:underline">Bandingkan</a>
+        <a href="index.html" class="hover:text-pink-600 font-sans font-semibold text-lg">Beranda</a>
+        <a href="check.html" class="hover:text-pink-600 font-sans font-semibold text-lg">Cek Skincare</a>
+        <a href="education.html" class="hover:text-pink-600 font-sans font-semibold text-lg">Edukasi</a>
+        <a href="report.html" class="hover:text-pink-600 font-sans font-semibold text-lg active: text-blue-100">Lapor</a>
       </nav>
     </div>
   </header>
