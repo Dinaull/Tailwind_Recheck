@@ -28,10 +28,10 @@ recheck/
     <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
       <h1 class="text-xl font-bold">ReCheck</h1>
       <nav class="space-x-4">
-        <a href="index.html" class="hover:underline">Beranda</a>
-        <a href="check.html" class="hover:underline">Cek Skincare</a>
-        <a href="compare.html" class="hover:underline">Bandingkan</a>
-        <a href="report.html" class="hover:underline">Lapor</a>
+        <a href="index.html" class="hover:hover:text-pink-600 font-sans font-semibold text-lg">Beranda</a>
+        <a href="check.html" class="hover:hover:text-pink-600 font-sans font-semibold text-lg">Cek Skincare</a>
+        <a href="education.html" class="hover:text-pink-600 font-sans font-semibold text-lg active: text-blue-100">Edukasi</a>
+        <a href="report.html" class="hover:text-pink-600 font-sans font-semibold text-lg">Lapor</a>
       </nav>
     </div>
   </header>
@@ -54,8 +54,85 @@ recheck/
     </div>
   </main>
 
-  <footer class="bg-white text-center text-sm text-slate-500 py-4 border-t border-slate-200">
-    &copy; 2025 ReCheck.
-  </footer>
+  <section class="max-w-5xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-semibold text-center text-blue-900 mb-10">Bedakan Produk Asli & Palsu</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+      <div class="bg-white rounded-lg shadow p-4">
+        <h3 class="text-center font-semibold text-pink-600 mb-4">Asli</h3>
+        <img src="assets/img/skincare_asli.jpg" alt="Kemasan Asli" class="w-full h-64 object-contain rounded">
+        <ul class="mt-4 text-sm text-slate-600 list-disc list-inside">
+          <li>Logo dan font konsisten</li>
+          <li>Ada nomor BPOM</li>
+          <li>Kemasan rapi dan tersegel</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-lg shadow p-4">
+        <h3 class="text-center font-semibold text-red-600 mb-4">Palsu</h3>
+        <img src="assets/img/skincare_palsu.jpg" alt="Kemasan Palsu" class="w-full h-64 object-contain rounded">
+        <ul class="mt-4 text-sm text-slate-600 list-disc list-inside">
+          <li>Warna kemasan buram</li>
+          <li>Tidak ada atau nomor BPOM palsu</li>
+          <li>Kemasan mudah rusak atau tidak tersegel</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-16 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-10">
+        🎓 Edukasi Skincare Aman
+      </h2>
+      <p class="text-gray-600 mb-12">Tonton video berikut untuk memahami bahaya skincare palsu dan cara mengenalinya.</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div class="aspect-video">
+          <iframe class="w-full h-full rounded-xl shadow-lg"
+            src="https://www.youtube.com/embed/p5-yqyldgkg" 
+            title="Video Edukasi 1" 
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="aspect-video">
+          <iframe class="w-full h-full rounded-xl shadow-lg"
+            src="https://www.youtube.com/embed/-Q88dbGlAEE" 
+            title="Video Edukasi 2" 
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="aspect-video">
+          <iframe class="w-full h-full rounded-xl shadow-lg"
+            src="https://www.youtube.com/embed/YnEwXWnghTY" 
+            title="Video Edukasi 3" 
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="aspect-video">
+          <iframe class="w-full h-full rounded-xl shadow-lg"
+            src="https://www.youtube.com/embed/PX4Ajqx9fvc" 
+            title="Video Edukasi 4" 
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<footer class="bg-white text-center text-sm text-slate-500 py-4 border-t border-slate-200">
+  &copy; 2025 ReCheck.
+</footer>
 </body>
 </html>
