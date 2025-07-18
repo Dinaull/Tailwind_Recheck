@@ -1,5 +1,3 @@
-// script.js – Interaktivitas dasar untuk ReCheck
-
 document.addEventListener('DOMContentLoaded', () => {
   const cekForm = document.getElementById('cekProdukForm');
   const hasil = document.getElementById('hasilCek');
@@ -17,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Dummy logic pengecekan
       const dataAman = [
         { nama: 'GlowWhite', reg: 'NA18210123456' },
         { nama: 'SkinPure', reg: 'NA18201234567' },
